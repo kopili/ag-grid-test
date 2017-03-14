@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { MyGridApplicationComponent } from './my-grid-application/my-grid-application.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyGridApplicationComponent
   ],
   imports: [
     BrowserModule,
