@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { MyGridApplicationComponent } from './my-grid-application/my-grid-application.component';
 import { RedComponentComponent } from './red-component/red-component.component';
 
+import {AgGridModule} from "ag-grid-angular/main";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,10 @@ import { RedComponentComponent } from './red-component/red-component.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AgGridModule.withComponents(
+      [RedComponentComponent]
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
